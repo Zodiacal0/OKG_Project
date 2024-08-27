@@ -5,8 +5,9 @@ abstract class DispositivoController {
     public DispositivoController() {
     }
 
-    abstract int encender();  
+    abstract void encender();  
     
-    
+    abstract void statsTelef();
+
 }
 
