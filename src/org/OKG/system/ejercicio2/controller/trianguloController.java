@@ -17,15 +17,18 @@ public class trianguloController {
         public void datosTri(){
        triangulo areatri = new triangulo();
        
-       
+       System.out.println(" ");
         System.out.print("Introduce la altrua del traingulo: ");
         double altura = scanner.nextDouble();
+        System.out.println(" ");
         System.out.print("Introduce la base del traingulo: ");
         double base = scanner.nextDouble();
         
  
 
         double area = areatri.calcularArea();
+        System.out.println(" ");
         System.out.println("El área del círculo es: " + area);    
+        System.out.println(" ");
         }
 }

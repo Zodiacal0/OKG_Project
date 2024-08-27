@@ -32,6 +32,7 @@ public class Main {
                     //metodo 1
                     break;
             case 2:
+                    System.out.println(" ");
                     System.out.println("Has elegido ejercicio de Figuras");
                     menuFiguras menuFiguras = new menuFiguras();
                     menuFiguras.mostrarMenu();

@@ -16,12 +16,15 @@ public class cuadradoController {
     Scanner scanner = new Scanner(System.in);
         public void datosCuadrado(){
        
+        System.out.println(" ");
         System.out.print("Introduce el lado del cuadrado: ");
         double lado = scanner.nextDouble();
         cuadrado areacua = new cuadrado(lado);
  
 
         double area = areacua.calcularArea();
+        System.out.println(" ");
         System.out.println("El área del círculo es: " + area);    
+        System.out.println(" ");
         }
 }

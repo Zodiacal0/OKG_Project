@@ -15,13 +15,15 @@ import org.OKG.system.ejercicio2.model.circulo;
 public class circuloController {
      Scanner scanner = new Scanner(System.in);
         public void datosCirculo(){
-       
+       System.out.println(" ");
         System.out.print("Introduce el radio del círculo: ");
         double radio = scanner.nextDouble();
         circulo circulo = new circulo(radio);
 
 
         double area = circulo.calcularArea();
+        System.out.println(" ");
         System.out.println("El área del círculo es: " + area);    
+        System.out.println(" ");
         }
 }
