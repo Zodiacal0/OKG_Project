@@ -1,10 +1,12 @@
 package org.OKG.system.model;
 
-public class Empleado {
+import org.OKG.system.controller.Trabajo;
 
-    String nombre;
-    int edad;
-    double salario;
+public class Empleado implements Trabajo{
+
+    private String nombre;
+    private int edad;
+    private double salario;
 
     public Empleado(){
 
@@ -15,6 +17,10 @@ public class Empleado {
         this.edad = edad;
         this.salario = salario;
 
+    }
+    
+    public void trabajar(int horas){
+        System.out.println("horas trabajadas " + horas);
     }
 
     public String getNombre() {
@@ -40,8 +46,12 @@ public class Empleado {
     public void setSalario(double salario) {
         this.salario = salario;
     }
-    
-    
 
+    @Override
+    public void trabajar() {
+        System.out.println("\"Empleado{\" + \"nombre=\" + nombre + \", edad=\" + edad + \", salario=\" + salario + '}';"); 
+    }
+    
+    
     
 }
