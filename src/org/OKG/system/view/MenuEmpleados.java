@@ -48,11 +48,12 @@ public class MenuEmpleados {
                     tc.datos();
                     tc.trabajar();
                     break;
+                case 4:
+                    flag = false;
                 default:
                     System.out.println("Esta opción no existe.");
                     break;
             }
         }
-        in.close();
     }
 }
