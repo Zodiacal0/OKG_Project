@@ -1,10 +1,14 @@
 package org.OKG.system;
 
-import java.util.Scanner;
-
 import org.OKG.system.controller.ComputadoraController;
 import org.OKG.system.controller.TelefonoController;
 import org.OKG.system.controller.TelevisorController;
+import  java.util.Scanner;
+import org.OKG.system.ejercicio2.controller.menuFiguras;
+/**
+ *
+ * @author Okg
+ */
 
 public class Main {
 
@@ -28,7 +32,10 @@ public class Main {
                     break;
 
                 case 2:
-                    System.out.println("Ejercicio 2 seleccionado.");
+                    System.out.println(" ");
+                    System.out.println("Has elegido ejercicio de Figuras");
+                    menuFiguras menuFiguras = new menuFiguras();
+                    menuFiguras.mostrarMenu();
                     break;
 
                 case 3:
@@ -73,7 +80,7 @@ public class Main {
 
                 default:
                     System.out.println("Esta opción no existe.");
-                    break;
+            
             }
         }
         
