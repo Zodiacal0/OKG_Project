@@ -12,7 +12,7 @@ public class TelevisorController extends DispositivoController {
 
     @Override
     public void encender() {
-        System.out.println("El teléfono está encendido con volumen: " + volumen );
+        System.out.println("El Televisor está encendido con volumen: " + volumen );
     }
     
     @Override
