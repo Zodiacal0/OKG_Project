@@ -1,6 +1,6 @@
 package org.OKG.system.model;
 
-public class Dispositivo {
+abstract class Dispositivo {
     
     public Dispositivo(){
 
