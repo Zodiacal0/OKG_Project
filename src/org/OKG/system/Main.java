@@ -1,51 +1,74 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Main.java to edit this template
- */
 package org.OKG.system;
-import  java.util.Scanner;
-/**
- *
- * @author Okg
- */
+
+import java.util.Scanner;
+
+import org.OKG.system.controller.TelefonoController;
+import org.OKG.system.controller.TelevisorController;
+
 public class Main {
 
-    /**
-     * @param args the command line arguments
-     */
     public static void main(String[] args) {
         
-        Scanner in = new Scanner (System.in);
-
-        Boolean flag = true; 
-        while(flag){
-            System.out.println("Elige algun ejercicio");
+        Scanner in = new Scanner(System.in);
+        boolean flag = true; 
+        
+        while (flag) {
+            System.out.println("Elige alguna opción:");
             System.out.println("Ejercicio 1:");
             System.out.println("Ejercicio 2:");
             System.out.println("Ejercicio 3:");
             System.out.println("Salir: 4");
+            
             int op = in.nextInt();
 
             switch (op) {
                 case 1:
-                    //metodo 1
+                    System.out.println("Ejercicio 1 seleccionado.");
                     break;
-            case 2:
-                    // metodo 2
+
+                case 2:
+                    System.out.println("Ejercicio 2 seleccionado.");
                     break;
-            case 3:
-                    //metodo 3
-                break;                    
-            case 4:
-                flag = false;
-                break;
-            default:
-                System.out.println("Esta opcion no existe");
-            break;
+
+                case 3:
+                    System.out.println("Elija qué desea ver:");
+                    System.out.println("Teléfono: 1");
+                    System.out.println("Televisor: 2");
+                    System.out.println("Computadora: 3");
+                    int op2 = in.nextInt();
+                    System.out.println("\n");
+                    switch (op2) {
+                        case 1:
+                            TelefonoController telef = new TelefonoController(4);
+                            telef.encender();
+                            System.out.println("Detalles del Telefono:");
+                            telef.statsTelef();
+                            System.out.println("\n");
+                            break;
+                        case 2:
+                            TelevisorController tv = new TelevisorController("14");
+                            tv.encender();
+                            System.out.println("Detalles del Televisor:");
+                            tv.statsTelef();
+                            System.out.println("\n");
+                            break;
+                        default:
+                            System.out.println("Opción no disponible.");
+                            break;
+                    }
+                    break;                    
+
+                case 4:
+                    flag = false;
+                    System.out.println("Saliendo del programa...");
+                    break;
+
+                default:
+                    System.out.println("Esta opción no existe.");
+                    break;
             }
         }
-        in.close();
         
+        in.close();
     }
-    
 }
