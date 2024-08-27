@@ -14,8 +14,8 @@ public class EmpleadoController implements Trabajo{
 
     @Override
     public void datos() {
-       Empleado ep = new Empleado();
-       String datos = ep.toString();
+        Empleado ep = new Empleado();
+        String datos = ep.toString();
         System.out.println(datos);
     }
 

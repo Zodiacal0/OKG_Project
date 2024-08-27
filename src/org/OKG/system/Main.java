@@ -5,6 +5,7 @@ import org.OKG.system.controller.TelefonoController;
 import org.OKG.system.controller.TelevisorController;
 import  java.util.Scanner;
 import org.OKG.system.ejercicio2.controller.menuFiguras;
+import org.OKG.system.view.MenuEmpleados;
 /**
  *
  * @author Okg
@@ -29,6 +30,8 @@ public class Main {
             switch (op) {
                 case 1:
                     System.out.println("Ejercicio 1 seleccionado.");
+                    MenuEmpleados menu = new MenuEmpleados();
+                    menu.menu();
                     break;
 
                 case 2:
