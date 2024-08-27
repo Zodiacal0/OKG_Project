@@ -14,7 +14,7 @@ import org.OKG.system.ejercicio2.model.triangulo;
  */
 public class trianguloController {
     Scanner scanner = new Scanner(System.in);
-        public void datosCuadrado(){
+        public void datosTri(){
        triangulo areatri = new triangulo();
        
        

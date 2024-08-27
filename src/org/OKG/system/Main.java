@@ -4,6 +4,7 @@
  */
 package org.OKG.system;
 import  java.util.Scanner;
+import org.OKG.system.ejercicio2.controller.menuFiguras;
 /**
  *
  * @author Okg
@@ -31,7 +32,9 @@ public class Main {
                     //metodo 1
                     break;
             case 2:
-                    // metodo 2
+                    System.out.println("Has elegido ejercicio de Figuras");
+                    menuFiguras menuFiguras = new menuFiguras();
+                    menuFiguras.getClass();
                     break;
             case 3:
                     //metodo 3
