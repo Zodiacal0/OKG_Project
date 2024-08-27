@@ -5,7 +5,7 @@ import java.util.Scanner;
 public class menuFiguras {
     private Scanner leer = new Scanner(System.in);
     
-    private void mostrarMenu() {
+    public void mostrarMenu() {
         
         boolean bandera = true;
         while (bandera) {
