@@ -43,8 +43,8 @@ public class Main {
                 System.out.println("Esta opcion no existe");
             break;
             }
-
         }
+        in.close();
         
     }
     
