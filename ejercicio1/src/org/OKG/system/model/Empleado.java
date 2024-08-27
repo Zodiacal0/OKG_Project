@@ -1,12 +1,11 @@
 package org.OKG.system.model;
 
-import org.OKG.system.controller.Trabajo;
 
-public class Empleado implements Trabajo{
+public class Empleado{
 
-    private String nombre;
-    private int edad;
-    private double salario;
+    private String nombre = "Diego";
+    private int edad = 18;
+    private double salario = 3800.99;
 
     public Empleado(){
 
@@ -48,10 +47,9 @@ public class Empleado implements Trabajo{
     }
 
     @Override
-    public void trabajar() {
-        System.out.println("\"Empleado{\" + \"nombre=\" + nombre + \", edad=\" + edad + \", salario=\" + salario + '}';"); 
-    }
-    
-    
+    public String toString() {
+        return "nombre: " + nombre + "\n " +
+                "edad: "  + edad +   "\n" + "salario: " + salario;
+                }
     
 }

@@ -4,14 +4,13 @@
  */
 package org.OKG.system.model;
 
-import org.OKG.system.controller.Trabajo;
 
 /**
  *
  * @author mauco
  */
-public class Desarrollador extends Empleado implements Trabajo{
-    private String lenguajeProg;
+public class Desarrollador extends Empleado{
+    private String lenguajeProg = "Java";
 
     public Desarrollador() {
     }
@@ -19,14 +18,11 @@ public class Desarrollador extends Empleado implements Trabajo{
     public Desarrollador(String lenguajeProg) {
         this.lenguajeProg = lenguajeProg;
     }
-    
-    public void trabajar(String proyecto){
-        System.out.println("Proyecto trabajado " + proyecto);
-    }
 
     @Override
-    public void trabajar() {
-        System.out.println("Yo trabajo como Desarrollador");
+    public String toString() {
+        return "lenguaje de programacion" + lenguajeProg+ "\n " + super.toString();
     }
     
+   
 }

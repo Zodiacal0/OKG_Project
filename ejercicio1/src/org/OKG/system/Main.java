@@ -4,6 +4,12 @@
  */
 package org.OKG.system;
 
+import java.util.Scanner;
+import org.OKG.system.model.Desarrollador;
+import org.OKG.system.model.Empleado;
+import org.OKG.system.model.Tester;
+import org.OKG.system.view.MenuEmpleados;
+
 /**
  *
  * @author mauco
@@ -15,6 +21,8 @@ public class Main {
      */
     public static void main(String[] args) {
         // TODO code application logic here
+        MenuEmpleados me = new MenuEmpleados();
+        me.menu();
+
     }
-    
 }

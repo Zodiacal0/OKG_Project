@@ -9,5 +9,7 @@ package org.OKG.system.controller;
  * @author mauco
  */
 public interface Trabajo {
+    public void datos();
+    
     public void trabajar();
 }
