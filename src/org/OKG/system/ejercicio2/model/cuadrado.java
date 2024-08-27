@@ -7,8 +7,29 @@ package org.OKG.system.ejercicio2.model;
 
 /**
  *
- * @author informatica
+ * @author okg
  */
-public class cuadrado {
+public class cuadrado extends forma{
     
+    private double lado;
+
+    public cuadrado() {
+    }
+
+    public cuadrado(double lado) {
+        this.lado = lado;
+    }
+
+    public double getLado() {
+        return lado;
+    }
+
+    public void setLado(double lado) {
+        this.lado = lado;
+    }
+        
+    @Override
+    public double calcularArea() {
+        return lado*lado;
+    }    
 }
