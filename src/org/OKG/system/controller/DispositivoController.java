@@ -9,5 +9,6 @@ abstract class DispositivoController {
     
     abstract void statsTelef();
 
+    abstract void pass();
 }
 

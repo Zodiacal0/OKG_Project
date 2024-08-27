@@ -2,6 +2,7 @@ package org.OKG.system;
 
 import java.util.Scanner;
 
+import org.OKG.system.controller.ComputadoraController;
 import org.OKG.system.controller.TelefonoController;
 import org.OKG.system.controller.TelevisorController;
 
@@ -41,8 +42,10 @@ public class Main {
                         case 1:
                             TelefonoController telef = new TelefonoController(4);
                             telef.encender();
+                            telef.pass();
                             System.out.println("Detalles del Telefono:");
                             telef.statsTelef();
+
                             System.out.println("\n");
                             break;
                         case 2:
@@ -53,7 +56,12 @@ public class Main {
                             System.out.println("\n");
                             break;
                         default:
-                            System.out.println("Opción no disponible.");
+                        case 3:
+                            ComputadoraController pc = new ComputadoraController("12");
+                            pc.pass();
+                            System.out.println("Detalles del Televisor:");
+                            pc.statsTelef();
+                            System.out.println("\n");
                             break;
                     }
                     break;                    

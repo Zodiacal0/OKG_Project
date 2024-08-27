@@ -2,13 +2,14 @@ package org.OKG.system.controller;
 
 import java.util.Scanner;
 
+import org.OKG.system.model.Computadora;
 import org.OKG.system.model.Televisor;
 
-public class TelevisorController extends DispositivoController {
+public class ComputadoraController extends DispositivoController {
 
     private String volumen;
 
-    public TelevisorController(String volumen) {
+    public ComputadoraController(String volumen) {
         this.volumen = volumen;
     }
 
@@ -21,8 +22,8 @@ public class TelevisorController extends DispositivoController {
     
     @Override
     public void statsTelef(){
-        Televisor tv = new Televisor();
-        String datos = tv.toString();
+        Computadora pc = new Computadora();
+        String datos = pc.toString();
         System.out.println(datos);
     }
 
@@ -34,7 +35,7 @@ public class TelevisorController extends DispositivoController {
     public void pass(){
         System.out.println("Ingrese la contraseña");
         int password = in.nextInt();
-        if (password == 123) {
+        if (password == 321) {
             System.out.println("Contraseña correcta");
         }else{
             System.out.println("Contraseña incorrecta");
