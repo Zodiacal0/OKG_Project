@@ -26,7 +26,7 @@ public class Desarrollador extends Empleado implements Trabajo{
 
     @Override
     public void trabajar() {
-        System.out.println("");
+        System.out.println("Yo trabajo como Desarrollador");
     }
     
 }
