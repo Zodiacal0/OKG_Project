@@ -1,16 +1,16 @@
 package org.OKG.system.model;
 
-public class Telefono extends Dispositivo {
+public class Televisor extends Dispositivo {
     
-    private String marca = "SamSung";
-    private String modelo = "S24 Ultra";
+    private String marca = "LG";
+    private String modelo = "LG TV+";
     private int año = 2024;
-    private String bateria = "5000mH";
+    private String tamaño = "80 pulgadas";
 
-    public Telefono() {
+    public Televisor() {
     }
 
-    public Telefono(String marca, String modelo, int año) {
+    public Televisor(String marca, String modelo, int año) {
         super(marca, modelo, año);
     }
 
@@ -38,18 +38,22 @@ public class Telefono extends Dispositivo {
         this.año = año;
     }
 
-    public String getBateria() {
-        return bateria;
+    public String getTamaño() {
+        return tamaño;
     }
 
-    public void setBateria(String bateria) {
-        this.bateria = bateria;
+    public void setTamaño(String tamaño) {
+        this.tamaño = tamaño;
     }
+    
+    
+
+    
+    
 
     @Override
     public String toString(){
-        return "Bateria: " + getBateria() + "\n" + "Marca: " + getMarca() + "\n" + "Modelo: " + getModelo() + "\n" + "Año: " + getAño();
+        return "Tamaño: " + getTamaño() + "\n" + "Marca: " + getMarca() + "\n" + "Modelo: " + getModelo() + "\n" + "Año: " + getAño();
     }
-    
 
 }
